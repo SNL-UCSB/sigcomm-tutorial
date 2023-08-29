@@ -55,7 +55,7 @@ nest-asyncio==1.5.7
 netunicorn-base==0.3.7
 netunicorn-client==0.3.1
 netunicorn-executor==0.3.1
-netunicorn-library==0.3.6
+netunicorn-library==0.3.7
 notebook_shim==0.2.3
 numpy==1.25.2
 overrides==7.4.0
