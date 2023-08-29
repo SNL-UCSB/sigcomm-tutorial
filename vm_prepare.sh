@@ -5,6 +5,10 @@ sudo systemctl restart sshd
 DEBIAN_FRONTEND=noninteractive apt-get update && apt-get upgrade -y && apt-get install -y python3-pip curl git
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
+
+docker pull pinot.cs.ucsb.edu/cicflowmeter:latest
+docker pull pinot.cs.ucsb.edu/sigcommtutorial:latest
+
 git clone https://github.com/maybe-hello-world/sigcomm-tutorial.git /sigcommtutorial
 
 # prepare for session 3 - netunicorn
