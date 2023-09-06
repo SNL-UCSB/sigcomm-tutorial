@@ -15,4 +15,4 @@ git clone https://github.com/maybe-hello-world/sigcomm-tutorial.git /sigcommtuto
 pip3 install -r /sigcommtutorial/requirements.txt && cd /sigcommtutorial/session_3/netunicorn_practice && docker compose -f netunicorn-compose.yml up -d
 
 # jupyter, password: sigcommtutorial
-jupyter lab --no-browser --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.password='argon2:$argon2id$v=19$m=10240,t=10,p=8$3XgMepqCMSodsKa9YtxXXg$5fjlph20kPgiDXYvPP47HIz1GmdLZg4ISvY5lPc+ILE' --notebook-dir=/sigcommtutorial/
+jupyter lab --no-browser --ip=0.0.0.0 --port=80 --allow-root --NotebookApp.password='argon2:$argon2id$v=19$m=10240,t=10,p=8$3XgMepqCMSodsKa9YtxXXg$5fjlph20kPgiDXYvPP47HIz1GmdLZg4ISvY5lPc+ILE' --notebook-dir=/sigcommtutorial/
