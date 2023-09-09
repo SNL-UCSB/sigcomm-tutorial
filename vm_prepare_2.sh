@@ -10,8 +10,8 @@ cd /sigcommtutorial/session_3/netunicorn_practice && docker compose -f netunicor
 
 # install dependencies
 python3 -m venv /venv
-source /venv/activate
-python -m ipykernel install --user --name venv --display-name "sigcommtutorial"
+source /venv/bin/activate
+python3 -m ipykernel install --user --name venv --display-name "sigcommtutorial"
 pip3 install -r /sigcommtutorial/requirements.txt
 
 # jupyter, password: sigcommtutorial
