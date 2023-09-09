@@ -12,7 +12,13 @@ docker pull pinot.cs.ucsb.edu/sigcommtutorial:latest
 git clone https://github.com/maybe-hello-world/sigcomm-tutorial.git /sigcommtutorial
 
 # prepare for session 3 - netunicorn
-pip3 install -r /sigcommtutorial/requirements.txt && cd /sigcommtutorial/session_3/netunicorn_practice && docker compose -f netunicorn-compose.yml up -d
+cd /sigcommtutorial/session_3/netunicorn_practice && docker compose -f netunicorn-compose.yml up -d
+
+# install dependencies
+python3 -m venv /venv
+source /venv/activate
+python -m ipykernel install --user --name venv --display-name "sigcommtutorial"
+pip3 install -r /sigcommtutorial/requirements.txt
 
 # jupyter, password: sigcommtutorial
-jupyter lab --no-browser --ip=0.0.0.0 --port=80 --allow-root --NotebookApp.password='argon2:$argon2id$v=19$m=10240,t=10,p=8$3XgMepqCMSodsKa9YtxXXg$5fjlph20kPgiDXYvPP47HIz1GmdLZg4ISvY5lPc+ILE' --notebook-dir=/sigcommtutorial/
+jupyter lab --no-browser --ip=0.0.0.0 --port=80 --allow-root --KernelSpecManager.ensure_native_kernel=False --MultiKernelManager.default_kernel_name=venv --NotebookApp.password='argon2:$argon2id$v=19$m=10240,t=10,p=8$3XgMepqCMSodsKa9YtxXXg$5fjlph20kPgiDXYvPP47HIz1GmdLZg4ISvY5lPc+ILE' --notebook-dir=/sigcommtutorial/
