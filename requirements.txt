@@ -30,7 +30,7 @@ ipython
 isoduration
 jedi
 Jinja2
-json5=
+json5
 jsonpointer
 jsonschema
 jsonschema-specifications
