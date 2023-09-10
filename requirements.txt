@@ -6,4 +6,3 @@ pandas
 numpy
 matplotlib
 selenium
-trustee
