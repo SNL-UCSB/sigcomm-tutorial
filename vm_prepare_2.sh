@@ -6,7 +6,7 @@ docker pull pinot.cs.ucsb.edu/cicflowmeter:latest
 docker pull pinot.cs.ucsb.edu/sigcommtutorial:latest
 
 # prepare for session 3 - netunicorn
-cd /sigcommtutorial/session_3/netunicorn_practice && docker compose -f netunicorn-compose.yml up -d
+cd /sigcommtutorial/session_3/netunicorn && docker compose -f netunicorn-compose.yml up -d
 
 # install dependencies
 pip3 install -r /sigcommtutorial/requirements.txt
