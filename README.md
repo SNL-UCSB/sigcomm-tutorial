@@ -4,8 +4,9 @@ This is a repository with supporting materials for ACM SIGCOMM 2023 Tutorial: Cl
 
 The repository structured as follows:
 * requirements.txt - contains the list of required Python packages
-* vm_prepare.sh - script to prepare the VM for the tutorial
-* session_1: this folder contains demo materials for the first session of the tutorial
+* vm_prepare.sh and vm_prepare_2.sh - scripts to prepare the VM for the tutorial
+* session_1: this folder contains presentation and demo materials for the first session of the tutorial (The Standard ML Pipeline: Problems and Challenges)
+* session_2: this folder contains presentation materials for the second session of the tutorial (Beyond the Standard ML Pipeline)
 * session_3: this folder contains demo materials for the third session of the tutorial
   * trustee_practice: this folder contains hands-on materials for Trustee practice of session 3
   * netunicorn_practice: contains hands-on materials for netUnicorn practice
@@ -13,6 +14,7 @@ The repository structured as follows:
     * scripts: contains preconfiguration scripts. These scripts are used by Docker Compose.
     * netunicorn-compose.yml - docker-compose file for netUnicorn practice
     * additional_materials: contains additional (optional) materials for the netUnicorn practice
+* session_4: contains presentation materials for session 4 (Mini workshop)
 
 ## Session 2: Trustee
 - Web page: https://trusteeml.github.io/
@@ -31,3 +33,11 @@ If you are participating in the tutorial, please follow the instructions below t
 3. You will see the Jupyter Lab password prompt. Enter the next password: `sigcommtutorial`.
 4. Please, navigate to the `session_3/netunicorn_practice/notebooks` folder and open the `session3.ipynb` notebook.
 5. Follow the instructor's instructions to complete the practice.
+
+If you want to practice hands-on materials on your own, please follow the instructions below:
+1. Clone this repository to your machine
+2. Ensure you have python3 and pip3 installed on your machine (if you're using VMs, you can check vm_prepare.sh for instructions)
+3. Execute instructions from vm_prepare_2.sh to install docker, pull needed images, download packages, and start jupyter lab (change jupyter lab starting folder if needed)
+4. Open jupyter webpage and proceed with hands-on materials from corresponding sessions
+
+Session 3 requires around 4GB of RAM on the host machine.
